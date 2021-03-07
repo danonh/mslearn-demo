@@ -11,6 +11,7 @@ if ($psCmdlet.ParameterSetName -eq 'Path') {
         }
     
         # Resolve any wildcards that might be in the path
+        # Dodaje nowy komentarz
         $provider = $null
         $paths += $psCmdlet.SessionState.Path.GetResolvedProviderPathFromPSPath($aPath, [ref]$provider)
     }
